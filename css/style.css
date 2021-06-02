@@ -489,6 +489,13 @@ template {
     font-size: 10px;
     line-height: 12px;
   }
+  .header__button:hover {
+    background-color: #656B70;
+    font-weight: 400;
+  }
+  .menu__link:hover {
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 767px) {
