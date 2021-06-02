@@ -1,1 +1,45 @@
-
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .header
+    &__menu
+      width: 480px
+    &__button
+      width: 200px
+      font-size: 12px
+      line-height: 16px
+@media (max-width: 992px)
+  .container
+    max-width: 720px
+  .header
+    &__logo
+      width: 120px
+    &__menu
+      width: 380px
+      font-size: 12px
+      line-height: 15px
+    &__button
+      width: 130px
+      font-size: 10px
+      line-height: 12px
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+  .header
+    &__menu
+      display: none
+      &-button
+        display: flex
+    &__button
+      display: none
+@media (max-width: 576px)
+  .container
+    max-width: 88%
+@media (max-width: 575px)
+  .container
+    max-width: 88%
+  .header
+    &__logo
+      width: 100px
+    &-wrapper
+      height: 50px

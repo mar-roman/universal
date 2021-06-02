@@ -1,10 +1,16 @@
 .header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
   background-color: $back-color
   &-wrapper
     display: flex
     justify-content: space-between
     align-items: center
     height: 70px
+  &__logo
+    width: 163px
   &__menu
     display: flex
     justify-content: space-between
@@ -33,8 +39,20 @@
     cursor: pointer
     &:hover
       background-color: $grey-85
-      font-family: $lato-700
       font-weight: 700
+  &__menu-button
+    display: none
+    justify-content: space-between
+    flex-direction: column
+    width: 16px
+    height: 11px
+    border: none
+    background-color: $back-color
+    cursor: pointer
+.menu-button__line
+  width: 16px
+  height: 1px
+  background-color: #ffffff
 .menu
   &__link
     color: #ffffff
