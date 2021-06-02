@@ -1,0 +1,135 @@
+.background
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  height: 550px
+  width: 100%
+  background-color: $back-color
+  z-index: -100
+.hero
+  position: relative
+  margin-top: 70px
+  padding: 30px 0
+  &-wrapper
+    display: flex
+    border-radius: 10px
+    overflow: hidden
+  &-article
+    position: relative
+    flex-basis: 76.9%
+    padding: 59px 0 100px 55px
+    background: url(../img/hero-background.jpg) center no-repeat
+    background-size: cover
+    color: #ffffff
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+      z-index: 1
+  &-author
+    z-index: 10
+    display: flex
+    align-items: center
+    width: 150px
+    color: #ffffff
+    cursor: pointer
+    text-decoration: none
+    &__avatar
+      margin-right: 10px
+      width: 45px
+      height: 45px
+      border-radius: 50%
+      overflow: hidden
+    &__info
+      display: flex
+      flex-direction: column
+    &__name
+      margin-bottom: 2px
+      font-size: 14px
+      line-height: 20px
+    &__description
+      font-size: 12px
+      line-height: 15px
+      opacity: 0.4
+  &-info
+    z-index: 10
+    margin-top: 149px
+    &__language
+      font-family: $lato-900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #4592FF
+    &__title
+      margin-top: 20px
+      margin-bottom: 50px
+      font-family: Roboto Slab
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+    &__button
+      padding: 10px 0
+      width: 154px
+      background-color: $button-color
+      border-radius: 20px
+      font-family: $lato-900
+      font-size: 14px
+      line-height: 20px
+      color: #ffffff
+      border: none
+      cursor: pointer
+      &:hover
+        background-color: #005fe3
+      img
+        object-fit: contain
+        width: 15px
+        margin-left: 8px
+  &-recommendations
+    width: 263px
+    background-color: #ffffff
+    &__title
+      padding: 0 25px
+      margin-top: 20px
+      margin-bottom: 19px
+      font-family: $lato-900
+      text-transform: uppercase
+      font-size: 14px
+      line-height: 20px
+      color: $grey-100
+    &__item
+      height: 100px
+      padding: 0 25px
+      padding-top: 17px
+      padding-bottom: 19px
+      border-top: 1px solid #D9DADB
+      overflow: auto
+      &:hover
+        background-color: #F5F5F5
+    &__article-title
+      margin-top: 0
+      margin-bottom: 8px
+      text-transform: uppercase
+      font-family: $lato-900
+      font-size: 12px
+      line-height: 15px
+      &--css
+        color: #3BBDC4
+      &--script
+        color: #6E99AE
+      &--html
+        color: #AC8EE3
+      &--web
+        color: #FFA34D
+    &__text
+      color: $grey-85
+      font-size: 14px
+      line-height: 20px
+      margin: 0

@@ -1,9 +1,10 @@
 .header
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   right: 0
   background-color: $back-color
+  z-index: 100
   &-wrapper
     display: flex
     justify-content: space-between
@@ -20,7 +21,6 @@
     width: 540px
     font-family: $lato-900
     font-style: normal
-    font-weight: 900
     font-size: 14px
     line-height: 20px
   &__button

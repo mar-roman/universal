@@ -13,7 +13,7 @@
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
-        <a href="#" class="header__logo">
+        <a href="index.html" class="header__logo">
           <img src="img/logo.svg" alt="Logo: Universal">
         </a>
         
@@ -42,45 +42,52 @@
   </header>
   <!-- /.header -->
 
+  <div class="background"></div>
+
   <section class="hero">
     <div class="container">
       <div class="hero-wrapper">
         <div class="hero-article">
-          <div class="hero-author">
-            <img src="img/author-avatar.png" alt="Автор: Давид Гуров">
-            <span class="hero-author__name">Давид Гуров</span>
-            <span class="hero-author__description">Разработчик</span>
-          </div>
+          <a class="hero-author" href="#">
+            <div class="hero-author__avatar">
+              <img src="img/author-avatar.png" alt="Автор: Давид Гуров">
+            </div>
+            <div class="hero-author__info">
+              <span class="hero-author__name">Давид Гуров</span>
+              <span class="hero-author__description">Разработчик</span>
+            </div>
+          </a>
           <!-- /.hero-author -->
           <div class="hero-info">
             <span class="hero-info__language">Javascript</span>
-            <h1 class="hero-info__title">Расширение Chrome защищает от атак</h1>
-            <button class="hero-info__button">Читать далее</button>
+            <h1 class="hero-info__title">Расширение Chrome <br>защищает от атак</h1>
+            <button class="hero-info__button">Читать далее
+              <img src="img/arrow.svg" alt="стрелочка">
+            </button>
           </div>
           <!-- /.hero-info -->
         </div>
         <!-- /.hero-article -->
-        
         <div class="hero-recommendations">
           <h2 class="hero-recommendations__title">Рекомендуем</h2>
           <div class="hero-recommendations__item">
-            <h3 class="hero-recommendations__article-title">css</h3>
+            <h3 class="hero-recommendations__article-title hero-recommendations__article-title--css">css</h3>
             <p class="hero-recommendations__text">Как использовать CSS float после того, как вышел Flexbox</p>
           </div>
           <div class="hero-recommendations__item">
-            <h3 class="hero-recommendations__article-title">javascript</h3>
+            <h3 class="hero-recommendations__article-title hero-recommendations__article-title--script">javascript</h3>
             <p class="hero-recommendations__text">На каком стандарте писать скрипты, если я фрилансер</p>
           </div>
           <div class="hero-recommendations__item">
-            <h3 class="hero-recommendations__article-title">html</h3>
+            <h3 class="hero-recommendations__article-title hero-recommendations__article-title--html">html</h3>
             <p class="hero-recommendations__text">Правильно вставляем картинку на сайт для Retina дисплея</p>
           </div>
           <div class="hero-recommendations__item">
-            <h3 class="hero-recommendations__article-title">Web design</h3>
+            <h3 class="hero-recommendations__article-title hero-recommendations__article-title--web">Web design</h3>
             <p class="hero-recommendations__text">ТОП-10 плагинов для Figma</p>
           </div>
           <div class="hero-recommendations__item">
-            <h3 class="hero-recommendations__article-title">CSS</h3>
+            <h3 class="hero-recommendations__article-title hero-recommendations__article-title--css">CSS</h3>
             <p class="hero-recommendations__text">Возможности CSS Grid Layout , которые уже можно применять</p>
           </div>
         </div>
