@@ -14,6 +14,20 @@
     &-recommendations
       &__item
         height: 120px
+  .features
+    &-wrapper
+      padding: 25px 0 30px
+  .feature
+    padding-left: 16px
+    padding-right: 16px
+    &__title
+      width: 140px
+      margin: 0 10px 0 0
+      font-size: 13px
+      line-height: 18px
+    &__image
+      width: 55px
+      height: 55px
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -64,6 +78,23 @@
       &__text
         font-size: 12px
         line-height: 18px
+  .features
+    &-wrapper
+      flex-wrap: wrap
+      padding: 15px 0 20px
+  .feature
+    width: 50%
+    padding-top: 8px
+    padding-bottom: 8px
+    &:nth-child(2)
+      border-right: none
+    &__title
+      width: 200px
+      font-size: 14px
+      line-height: 20px
+    &__image
+      width: 60px
+      height: 60px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -98,6 +129,19 @@
         width: 140px
         font-size: 12px
         line-height: 18px
+  .features
+    &-wrapper
+      padding: 12px 0 17px
+  .feature
+    padding-top: 7px
+    padding-bottom: 7px
+    &__title
+      width: 180px
+      font-size: 13px
+      line-height: 20px
+    &__image
+      width: 55px
+      height: 55px
 @media (max-width: 576px)
   .container
     max-width: 88%
@@ -122,6 +166,20 @@
       width: 100%
       &__item
         height: 70px
+  .features
+    &-wrapper
+      padding: 12px 20px 17px
+  .feature
+    width: 100%
+    display: flex
+    justify-content: space-between
+    &:nth-child(n)
+      border-right: none
+    &__title
+      width: 65%
+    &__image
+      width: 55px
+      height: 55px
 @media (max-width: 575px)
   .container
     max-width: 88%
@@ -148,3 +206,10 @@
         margin-bottom: 15px
       &__item
         height: 90px
+  .features
+    &-wrapper
+      padding: 12px 0 17px
+  .feature
+    &__title
+      font-size: 12px
+      line-height: 18px
