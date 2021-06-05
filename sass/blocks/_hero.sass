@@ -6,7 +6,6 @@
   height: 550px
   width: 100%
   background-color: $back-color
-  z-index: -100
 .hero
   position: relative
   margin-top: 70px
@@ -32,8 +31,8 @@
       bottom: 0
       right: 0
       background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
-      z-index: 1
   &-author
+    position: relative
     z-index: 10
     display: flex
     align-items: center
@@ -59,8 +58,9 @@
       line-height: 15px
       opacity: 0.4
   &-info
+    position: relative
     z-index: 10
-    margin-top: 149px
+    padding-top: 149px
     &__language
       font-family: $lato-900
       font-size: 12px
@@ -106,9 +106,7 @@
       color: $grey-100
     &__item
       height: 100px
-      padding: 0 25px
-      padding-top: 17px
-      padding-bottom: 19px
+      padding: 17px 25px 19px
       border-top: 1px solid #D9DADB
       overflow: auto
       &:hover
