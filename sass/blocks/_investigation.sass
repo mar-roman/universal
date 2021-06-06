@@ -1,0 +1,50 @@
+.investigation
+  position: relative
+  height: 270px
+  background: url(../img/investigation-background.jpg) center no-repeat
+  &::after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+  &-wrapper
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 50px 0 55px
+    z-index: 10
+  &__title
+    width: 900px
+    margin-top: 0
+    margin-bottom: 25px
+    font-family: Roboto Slab
+    font-weight: bold
+    text-align: center
+    font-size: 40px
+    line-height: 50px
+    color: #ffffff
+  &__button
+    display: inline-block
+    text-align: center
+    padding: 10px 0
+    width: 161px
+    background-color: $button-color
+    border-radius: 20px
+    font-family: $lato-900
+    font-size: 14px
+    line-height: 20px
+    color: #ffffff
+    cursor: pointer
+    text-decoration: none
+    &:hover
+      background-color: #005fe3
+    img
+      object-fit: contain
+      width: 15px
+      margin-left: 8px

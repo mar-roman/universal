@@ -565,6 +565,8 @@ template {
 }
 
 .hero-info__button {
+  display: inline-block;
+  text-align: center;
   padding: 10px 0;
   width: 154px;
   background-color: #4592FF;
@@ -573,8 +575,8 @@ template {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
-  border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hero-info__button:hover {
@@ -1178,6 +1180,70 @@ template {
   fill: #d90000;
 }
 
+.investigation {
+  position: relative;
+  height: 270px;
+  background: url(../img/investigation-background.jpg) center no-repeat;
+}
+
+.investigation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+}
+
+.investigation-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 55px;
+  z-index: 10;
+}
+
+.investigation__title {
+  width: 900px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: Roboto Slab;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.investigation__button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  width: 161px;
+  background-color: #4592FF;
+  border-radius: 20px;
+  font-family: "Lato-Black", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.investigation__button:hover {
+  background-color: #005fe3;
+}
+
+.investigation__button img {
+  object-fit: contain;
+  width: 15px;
+  margin-left: 8px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1550,6 +1616,20 @@ template {
   .networks__icon--youtube:hover {
     fill: #FF0000;
   }
+  .investigation {
+    height: 240px;
+  }
+  .investigation-wrapper {
+    padding: 40px 0 45px;
+  }
+  .investigation__title {
+    width: 750px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .investigation__button:hover {
+    background-color: #4592FF;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1704,6 +1784,22 @@ template {
     width: 40px;
     height: 40px;
   }
+  .investigation {
+    height: 220px;
+  }
+  .investigation-wrapper {
+    padding: 35px 0 40px;
+  }
+  .investigation__title {
+    width: 630px;
+    font-size: 27px;
+    line-height: 42px;
+  }
+  .investigation__button {
+    width: 157px;
+    font-size: 12px;
+    line-height: 17px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1769,6 +1865,17 @@ template {
   }
   .check-list__top {
     height: 81%;
+  }
+  .investigation {
+    height: 190px;
+  }
+  .investigation-wrapper {
+    padding: 20px 0 25px;
+  }
+  .investigation__title {
+    width: 500px;
+    font-size: 22px;
+    line-height: 37px;
   }
 }
 
@@ -1903,6 +2010,22 @@ template {
   .networks__icon {
     width: 40px;
     height: 40px;
+  }
+  .investigation {
+    height: 180px;
+  }
+  .investigation-wrapper {
+    padding: 15px 0 20px;
+  }
+  .investigation__title {
+    width: 280px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .investigation__button {
+    width: 145px;
+    font-size: 10px;
+    line-height: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
