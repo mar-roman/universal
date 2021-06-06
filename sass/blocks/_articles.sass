@@ -76,7 +76,7 @@
   &__author
     padding: 12px 35px 13px
     display: flex
-    justify-content: space-between
+    justify-content: start
     align-items: center
     border-top: 1px solid #D9DADB
   &__author-logo
@@ -85,11 +85,15 @@
     height: 30px
     border-radius: 50%
     overflow: hidden
+  &__author-info
+    display: flex
+    align-items: center
   &__author-comment
     width: 15px
     height: 15px
     margin-right: 5.75px
   &__author-name
+    margin-right: 5px
     font-family: $lato-900
     font-size: 14px
     line-height: 20px
@@ -267,13 +271,12 @@
     padding: 0
     width: 100px
     height: 20px
-    border: none
-    background-color: #3BBDC4
     cursor: pointer
     color: #ffffff
     font-family: $lato-900
     font-size: 14px
     line-height: 20px
+    text-decoration: none
     &:hover
       text-decoration: underline
   &__icon
