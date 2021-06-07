@@ -99,6 +99,26 @@
     height: 260px
     &__title
       margin: 0 0 60px
+  .news
+    &-items
+      width: 680px
+    &-published
+      width: 240px
+      &__wrapper
+        padding: 0 20px
+  .item
+    &__image
+      width: 250px
+    &-info
+      width: 370px
+      &__text
+        height: 80px
+  .published
+    &__title
+      margin-top: 0
+      margin-bottom: 5px
+      font-size: 13px
+      line-height: 18px
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -306,6 +326,67 @@
     &__button
       &:hover
         background-color: $button-color
+  .news
+    &-wrapper
+      padding: 50px 0
+    &-items
+      width: 500px
+      padding: 0 20px
+    &-published
+      width: 200px
+      &__wrapper
+        padding: 0 17px
+      &__title
+        padding-top: 15px
+        padding-bottom: 14px
+        font-size: 11px
+        line-height: 17px
+      &__more
+        padding: 9px 0 11px
+      &__button
+        font-size: 12px
+        line-height: 17px
+        &:hover
+          text-decoration: none
+  .item
+    padding: 18px 0
+    &__image
+      width: 200px
+      height: 190px
+      margin-right: 15px
+    &-info
+      width: 240px
+      &__description
+        font-size: 10px
+        line-height: 13px
+      &__flag
+        width: 12px
+      &__title
+        margin-top: 10px
+        margin-bottom: 8px
+        font-size: 17px
+        line-height: 22px
+      &__text
+        height: 90px
+        margin-top: 0
+        margin-bottom: 15px
+        font-size: 12px
+        line-height: 18px
+  .published
+    padding: 14px 0
+    &__image
+      height: 50px
+      width: 50px
+      margin-right: 8px
+    &__title
+      font-size: 11px
+      line-height: 16px
+    &__time
+      font-size: 10px
+      line-height: 13px
+    &__number
+      width: 31px
+      height: 40px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -434,6 +515,49 @@
       width: 157px
       font-size: 12px
       line-height: 17px
+  .news
+    &-wrapper
+      flex-direction: column
+      padding: 40px 0
+    &-items
+      width: 100%
+      margin-bottom: 30px
+    &-published
+      width: 100%
+      &__wrapper
+        padding: 0 60px
+      &__title
+        padding-top: 15px
+        padding-bottom: 14px
+        font-size: 13px
+        line-height: 18px
+      &__more
+        padding: 11px 0 14px
+  .item
+    padding: 18px 0
+    &__image
+      width: 240px
+      height: 210px
+    &-info
+      width: 280px
+      &__text
+        height: 90px
+  .published
+    padding: 14px 0
+    &__image
+      height: 50px
+      width: 50px
+    &-info
+      width: 80%
+    &__title
+      font-size: 14px
+      line-height: 20px
+    &__time
+      font-size: 12px
+      line-height: 15px
+    &__number
+      width: 31px
+      height: 40px
 @media (max-width: 576px)
   .container
     max-width: 88%
@@ -489,6 +613,19 @@
       width: 500px
       font-size: 22px
       line-height: 37px
+  .news
+    &-items
+      width: 100%
+      margin-bottom: 30px
+  .item
+    &__image
+      width: 208px
+      height: 220px
+    &-info
+      width: 259px
+      &__title
+        font-size: 15px
+        line-height: 20px
 @media (max-width: 575px)
   .container
     max-width: 88%
@@ -606,3 +743,24 @@
       width: 145px
       font-size: 10px
       line-height: 12px
+  .news
+    &-published
+      &__wrapper
+        padding: 0 22px
+  .item
+    &-info
+      width: 100%
+    &__image
+      display: none
+  .published
+    padding: 17px 0
+    &__image
+      width: 60px
+      height: 60px
+      margin-right: 12px
+    &__title
+      font-size: 14px
+      line-height: 20px
+    &__time
+      font-size: 12px
+      line-height: 15px

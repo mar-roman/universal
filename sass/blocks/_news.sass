@@ -41,12 +41,13 @@
       font-size: 14px
       line-height: 20px
       color: #262D33
-      cursor:
+      cursor: pointer
       &:hover
         text-decoration: underline
 .item
   display: flex
   justify-content: space-between
+  align-items: center
   padding: 25px 0
   border-bottom: 1px solid #D9DADB
   &:last-child
@@ -78,7 +79,7 @@
     &__flag
       margin: 1px 3px
       width: 14px
-      height: 18px
+      height: auto
       cursor: pointer
     &__title
       margin-top: 15px
@@ -89,11 +90,13 @@
       line-height: 25px
       color: $back-color
     &__text
+      height: 60px
       margin-top: 0
       margin-bottom: 20px
       font-size: 14px
       line-height: 20px
       color: $grey-85
+      overflow: auto
     &__statistics
       font-size: 12px
       line-height: 15px
@@ -116,6 +119,7 @@
   position: relative
   display: flex
   justify-content: space-between
+  align-items: center
   padding: 17px 0
   border-bottom: 1px solid #D9DADB
   &:last-child
@@ -127,6 +131,7 @@
   &__title
     margin-top: 0
     margin-bottom: 5px
+    font-weight: 400
     font-size: 14px
     line-height: 20px
     color: #4B5157
