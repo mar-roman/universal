@@ -1183,7 +1183,6 @@ template {
 .investigation {
   position: relative;
   height: 270px;
-  background: url(../img/investigation-background.jpg) center no-repeat;
 }
 
 .investigation::after {
@@ -1362,6 +1361,11 @@ template {
   width: 14px;
   height: auto;
   cursor: pointer;
+  fill: #BCBFC2;
+}
+
+.item-info__flag--active {
+  fill: #FF4F52;
 }
 
 .item-info__title {
