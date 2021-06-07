@@ -23,10 +23,24 @@
       line-height: 25px
       border-radius: 3px
       background-color: #3DC47E
+      z-index: 10
   &-slide
     padding: 50px 50px 40px
     background: url(../img/slide.jpg) center no-repeat
     background-size: cover
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    &-wrapper
+      position: relative
+      z-index: 10
     &__title
       margin-top: 30px
       margin-bottom: 45px
@@ -94,3 +108,66 @@
   background-color: #D9DADB
   &-active
     background-color: #ffffff
+.readers
+  &-articles
+    display: flex
+    align-content: space-between
+    flex-wrap: wrap
+    height: 570px
+    &__wrapper
+      display: flex
+      justify-content: space-between
+      width: 100%
+      height: 170px
+.carier
+  height: 370px
+  width: 100%
+  border-radius: 10px
+  overflow: hidden
+  background: url(../img/carier.png) center no-repeat
+  background-color: #B4D1E0
+  &-info
+    width: 248px
+    padding: 35px 0 50px 35px
+  &__description
+    font-family: $lato-900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #6E99AE
+  &__title
+    margin-top: 20px
+    margin-bottom: 15px
+    font-family: Roboto Slab
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: #262D33
+  &__text
+    height: 60px
+    margin-top: 0
+    margin-bottom: 45px
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+    overflow: auto
+  &__button
+    display: inline-block
+    text-align: center
+    padding: 10px 0
+    width: 154px
+    background-color: $button-color
+    border-radius: 20px
+    font-family: $lato-900
+    font-size: 14px
+    line-height: 20px
+    color: #ffffff
+    cursor: pointer
+    text-decoration: none
+    &:hover
+      background-color: #005fe3
+    img
+      object-fit: contain
+      width: 15px
+      margin-left: 8px
