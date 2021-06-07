@@ -1,0 +1,143 @@
+.news
+  &-wrapper
+    padding: 60px 0
+    display: flex
+    justify-content: space-between
+    align-items: start
+  &-items
+    width: 848px
+    padding: 0 25px
+    background-color: #ffffff
+    border-radius: 10px
+    overflow: hidden
+  &-published
+    width: 263px
+    background-color: #ffffff
+    border-radius: 10px
+    overflow: hidden
+    &__title
+      margin: 0
+      padding-top: 20px
+      padding-bottom: 19px
+      text-align: center
+      font-family: $lato-900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #262D33
+      border-bottom: 1px solid #D9DADB
+    &__wrapper
+      padding: 0 25px
+    &__more
+      padding: 11px 0 14px
+      border-top: 1px solid #D9DADB
+    &__button
+      display: block
+      margin: 0 auto
+      background-color: #ffffff
+      border: none
+      font-family: $lato-900
+      font-size: 14px
+      line-height: 20px
+      color: #262D33
+      cursor:
+      &:hover
+        text-decoration: underline
+.item
+  display: flex
+  justify-content: space-between
+  padding: 25px 0
+  border-bottom: 1px solid #D9DADB
+  &:last-child
+    border-bottom: none
+  &__image
+    width: 336px
+    height: 195px
+    margin-right: 25px
+  &-info
+    width: 437px
+    &__top
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__description
+      font-family: $lato-900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      &--news
+        color: #4592FF
+      &--opinions
+        color: #3BBDC4
+      &--hot
+        color: #FF4F52
+      &--selections
+        color: #AC8EE3
+    &__flag
+      margin: 1px 3px
+      width: 14px
+      height: 18px
+      cursor: pointer
+    &__title
+      margin-top: 15px
+      margin-bottom: 10px
+      font-family: Roboto Slab
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $back-color
+    &__text
+      margin-top: 0
+      margin-bottom: 20px
+      font-size: 14px
+      line-height: 20px
+      color: $grey-85
+    &__statistics
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__date
+      margin-right: 9px
+    &__comment
+      margin-bottom: 1px
+      margin-right: 4px
+      width: 13.5px
+      vertical-align: middle
+    &__comments-number
+      margin-right: 9px
+    &__heart
+      margin-bottom: 3px
+      margin-right: 4.5px
+      width: 12.75px
+      vertical-align: middle
+.published
+  position: relative
+  display: flex
+  justify-content: space-between
+  padding: 17px 0
+  border-bottom: 1px solid #D9DADB
+  &:last-child
+    border-bottom: none
+  &__image
+    width: 60px
+    height: 60px
+    margin-right: 10px
+  &__title
+    margin-top: 0
+    margin-bottom: 5px
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+  &__time
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+  &__number
+    position: absolute
+    top: 20px
+    right: 0
+    width: 41px
+    height: 50px
+    object-fit: contain
