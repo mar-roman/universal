@@ -122,4 +122,29 @@ $(document).ready(function(){
   flag1.on('click', function(){
     $(".item-info__flag--6").toggleClass("item-info__flag--active")
   });
+
+  //Слайдер с автоматический прокруткой на главной странице
+  const swiper = new Swiper('.swiper-container', {
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,        
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  },
+});
 });

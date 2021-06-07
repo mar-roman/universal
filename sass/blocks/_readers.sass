@@ -1,0 +1,96 @@
+.readers
+  background-color: #262D33
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    padding: 60px 0
+  &-slider
+    position: relative
+    width: 555px
+    height: 570px
+    border-radius: 10px
+    overflow: hidden
+    color: #ffffff
+    &__label
+      position: absolute
+      top: 18px
+      left: 18.5px
+      display: inline-block
+      width: 67px
+      height: 25px
+      text-align: center
+      font-size: 12px
+      line-height: 25px
+      border-radius: 3px
+      background-color: #3DC47E
+  &-slide
+    padding: 50px 50px 40px
+    background: url(../img/slide.jpg) center no-repeat
+    background-size: cover
+    &__title
+      margin-top: 30px
+      margin-bottom: 45px
+      font-family: Roboto Slab
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      text-align: center
+    &__button
+      display: block
+      text-align: center
+      padding: 10px 0
+      margin: 0 auto
+      width: 194px
+      background-color: $button-color
+      border-radius: 20px
+      font-family: $lato-900
+      font-size: 14px
+      line-height: 20px
+      color: #ffffff
+      cursor: pointer
+      text-decoration: none
+      &:hover
+        background-color: #005fe3
+      img
+        margin-right: 8px
+        margin-bottom: 2px
+        object-fit: contain
+        width: 20px
+        vertical-align: middle
+    &__photo-number
+      margin-left: 8px
+      font-family: $lato-400
+      color: #C5E4FC
+  &-articles
+    width: 555px
+    height: 570px
+.photograph
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__avatar
+    margin-bottom: 8px
+    height: 45px
+    width: 45px
+    border-radius: 50%
+    overflow: hidden
+  &__name
+    font-size: 14px
+    line-height: 20px
+    mix-blend-mode: normal
+    opacity: 0.85
+  &__description
+    font-size: 12px
+    line-height: 15px
+    mix-blend-mode: normal
+    opacity: 0.4
+.swiper-container
+  height: 100%
+  position: static
+.swiper-pagination
+  margin-bottom: 30px
+.swiper-pagination-bullet
+  margin: 0 8.5px
+  background-color: #D9DADB
+  &-active
+    background-color: #ffffff
