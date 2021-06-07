@@ -119,6 +119,26 @@
       margin-bottom: 5px
       font-size: 13px
       line-height: 18px
+  .readers
+    &-slider
+      width: 465px
+      height: 600px
+    &-articles
+      width: 465px
+      height: 600px
+      &__wrapper
+        height: 200px
+    &-article
+      padding: 18px
+      width: 218px
+      height: 100%
+      &__text
+        height: 80px
+    &-slide
+      &__title
+        margin-bottom: 65px
+        font-size: 33px
+        line-height: 44px
 @media (max-width: 992px)
   .container
     max-width: 720px
@@ -387,6 +407,32 @@
     &__number
       width: 31px
       height: 40px
+  .readers
+    &-wrapper
+      flex-direction: column
+      padding: 50px 0
+    &-slider
+      width: 100%
+      height: 470px
+      margin-bottom: 30px
+    &-slide
+      &__button
+        &:hover
+          background-color: $button-color
+    &-articles
+      width: 100%
+      height: 560px
+      &__wrapper
+        height: 160px
+    &-article
+      height: 100%
+      width: 347px
+      &__text
+        height: 40px
+  .carier
+    &__button
+      &:hover
+        background-color: $button-color
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -558,6 +604,49 @@
     &__number
       width: 31px
       height: 40px
+  .readers
+    height: 1130px
+    &-wrapper
+      padding: 40px 0
+    &-slider
+      height: 470px
+      margin-bottom: 30px
+    &-slide
+      &__title
+        margin-bottom: 80px
+        font-size: 26px
+        line-height: 34px
+      &__button
+        padding: 9px 0
+        width: 182px
+        font-size: 12px
+        line-height: 17px
+        img
+          margin-right: 7px
+          width: 17px
+    &-articles
+      height: 600px
+      &__wrapper
+        height: 210px
+    &-article
+      width: 280px
+      &__title
+        height: 20px
+        margin-bottom: 12px
+      &__text
+        margin-bottom: 5
+        height: 60px
+  .photograph
+    &__avatar
+      margin-bottom: 7px
+      height: 40px
+      width: 40px
+    &__name
+      font-size: 12px
+      line-height: 18px
+    &__description
+      font-size: 11px
+      line-height: 13px
 @media (max-width: 576px)
   .container
     max-width: 88%
@@ -626,6 +715,39 @@
       &__title
         font-size: 15px
         line-height: 20px
+  .readers
+    &-wrapper
+      padding: 35px 0 0
+    &-articles
+      height: 562px
+      &__wrapper
+        height: 230px
+    &-article
+      width: 245px
+  .carier
+    height: 310px
+    &-info
+      width: 248px
+      padding: 35px 0 50px 35px
+    &__description
+      font-size: 11px
+      line-height: 12px
+    &__title
+      margin-top: 18px
+      margin-bottom: 14px
+      font-size: 22px
+      line-height: 27px
+    &__text
+      margin-bottom: 20px
+      font-size: 12px
+      line-height: 17px
+    &__button
+      width: 148px
+      font-size: 12px
+      line-height: 17px
+    img
+      width: 12px
+      margin-left: 7px
 @media (max-width: 575px)
   .container
     max-width: 88%
@@ -764,3 +886,38 @@
     &__time
       font-size: 12px
       line-height: 15px
+  .readers
+    padding: 0
+    height: 1170px
+    &-slider
+      height: 400px
+      &__label
+        top: 14px
+        left: 14px
+        width: 62px
+        height: 22px
+        font-size: 10px
+        line-height: 22px
+        border-radius: 3px
+    &-slide
+      padding: 35px 20px 30px
+      &__title
+        margin-top: 22px
+        margin-bottom: 55px
+        font-size: 20px
+        line-height: 27px
+    &-articles
+      &__wrapper
+        flex-direction: column
+        height: auto
+    &-article
+      width: 100%
+      margin-bottom: 20px
+  .swiper-pagination
+    margin-bottom: 20px
+  .carier
+    background-image: none
+    margin-bottom: 20px
+    &-info
+      width: 100%
+      padding: 35px

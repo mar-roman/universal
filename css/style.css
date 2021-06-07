@@ -1560,11 +1560,6 @@ template {
   color: #C5E4FC;
 }
 
-.readers-articles {
-  width: 555px;
-  height: 570px;
-}
-
 .photograph {
   display: flex;
   flex-direction: column;
@@ -1615,6 +1610,7 @@ template {
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
+  width: 555px;
   height: 570px;
 }
 
@@ -1846,6 +1842,30 @@ template {
     margin-bottom: 5px;
     font-size: 13px;
     line-height: 18px;
+  }
+  .readers-slider {
+    width: 465px;
+    height: 600px;
+  }
+  .readers-articles {
+    width: 465px;
+    height: 600px;
+  }
+  .readers-articles__wrapper {
+    height: 200px;
+  }
+  .readers-article {
+    padding: 18px;
+    width: 218px;
+    height: 100%;
+  }
+  .readers-article__text {
+    height: 80px;
+  }
+  .readers-slide__title {
+    margin-bottom: 65px;
+    font-size: 33px;
+    line-height: 44px;
   }
 }
 
@@ -2183,6 +2203,35 @@ template {
     width: 31px;
     height: 40px;
   }
+  .readers-wrapper {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .readers-slider {
+    width: 100%;
+    height: 470px;
+    margin-bottom: 30px;
+  }
+  .readers-slide__button:hover {
+    background-color: #4592FF;
+  }
+  .readers-articles {
+    width: 100%;
+    height: 560px;
+  }
+  .readers-articles__wrapper {
+    height: 160px;
+  }
+  .readers-article {
+    height: 100%;
+    width: 347px;
+  }
+  .readers-article__text {
+    height: 40px;
+  }
+  .carier__button:hover {
+    background-color: #4592FF;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2411,6 +2460,61 @@ template {
     width: 31px;
     height: 40px;
   }
+  .readers {
+    height: 1130px;
+  }
+  .readers-wrapper {
+    padding: 40px 0;
+  }
+  .readers-slider {
+    height: 470px;
+    margin-bottom: 30px;
+  }
+  .readers-slide__title {
+    margin-bottom: 80px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .readers-slide__button {
+    padding: 9px 0;
+    width: 182px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .readers-slide__button img {
+    margin-right: 7px;
+    width: 17px;
+  }
+  .readers-articles {
+    height: 600px;
+  }
+  .readers-articles__wrapper {
+    height: 210px;
+  }
+  .readers-article {
+    width: 280px;
+  }
+  .readers-article__title {
+    height: 20px;
+    margin-bottom: 12px;
+  }
+  .readers-article__text {
+    margin-bottom: 5;
+    height: 60px;
+  }
+  .photograph__avatar {
+    margin-bottom: 7px;
+    height: 40px;
+    width: 40px;
+  }
+  .photograph__name {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .photograph__description {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2502,6 +2606,49 @@ template {
   .item-info__title {
     font-size: 15px;
     line-height: 20px;
+  }
+  .readers-wrapper {
+    padding: 35px 0 0;
+  }
+  .readers-articles {
+    height: 562px;
+  }
+  .readers-articles__wrapper {
+    height: 230px;
+  }
+  .readers-article {
+    width: 245px;
+  }
+  .carier {
+    height: 310px;
+  }
+  .carier-info {
+    width: 248px;
+    padding: 35px 0 50px 35px;
+  }
+  .carier__description {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .carier__title {
+    margin-top: 18px;
+    margin-bottom: 14px;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .carier__text {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .carier__button {
+    width: 148px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .carier img {
+    width: 12px;
+    margin-left: 7px;
   }
 }
 
@@ -2677,6 +2824,50 @@ template {
   .published__time {
     font-size: 12px;
     line-height: 15px;
+  }
+  .readers {
+    padding: 0;
+    height: 1170px;
+  }
+  .readers-slider {
+    height: 400px;
+  }
+  .readers-slider__label {
+    top: 14px;
+    left: 14px;
+    width: 62px;
+    height: 22px;
+    font-size: 10px;
+    line-height: 22px;
+    border-radius: 3px;
+  }
+  .readers-slide {
+    padding: 35px 20px 30px;
+  }
+  .readers-slide__title {
+    margin-top: 22px;
+    margin-bottom: 55px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .readers-articles__wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+  .readers-article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .swiper-pagination {
+    margin-bottom: 20px;
+  }
+  .carier {
+    background-image: none;
+    margin-bottom: 20px;
+  }
+  .carier-info {
+    width: 100%;
+    padding: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
